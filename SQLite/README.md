@@ -7,6 +7,8 @@ TRABAJO EN CLASE
 
 RTA/:UPDATE se utiliza para modificar un subconjunto de los valores almacenados en cero o más filas de la tabla de la base de datos.
 ej.update usuarios set clave='RealMadrid'; donde en la tabla de usuarios modifica la clave
+
+![Image text](https://github.com/tcarolina/SQLite/blob/main/SQLite/Imagenes/update.PNG)
  
 2.ESTRUCTURA DE LA BASE DE DATOS .SCHEMA
 
@@ -18,6 +20,9 @@ RTA/:.schema es un comando sqlite que muestra la estructura de una tabla. Devolv
 
 RTA/:-La función SQLite date() se usa para calcular la fecha y devolverla en el formato 'YYYY-MM-DD'.
 -La función SQLite datetime() se utiliza para calcular un valor de fecha/hora y devolverlo en el formato 'YYYY-MM-DD HH:MM:SS'.
+ej'select datetime(‘now’);
+
+![Image text](https://github.com/tcarolina/SQLite/blob/main/SQLite/Imagenes/date.PNG)
 
 4.PRIMARY KEY CONSTRAINT
 
@@ -30,13 +35,19 @@ RTA/:-La clave principal de SQLite es un campo simple o una combinación de camp
 
 RTA/:-nos dice que los registros en este campo o columna no pueden ser nulos, por lo que se deben guardar algun registro.
 
+![Image text](https://github.com/tcarolina/SQLite/blob/main/SQLite/Imagenes/null.PNG)
+
 6.UNIQUE CONSTRAINT
 
 RTA/:Este atributo asignado a una columna significa que el campo es único y no se pueden escribir ni almacenar varios registros con los mismos datos.
 
+![Image text](https://github.com/tcarolina/SQLite/blob/main/SQLite/Imagenes/unique.PNG)
+
 7.DEFAULT CONSTRAINT
 
 RTA/:Esta propiedad significa que el registro almacenado en esta columna tiene un valor predeterminado, por lo que si le agregamos datos, utilizará el valor especificado anteriormente.
+
+![Image text](https://github.com/tcarolina/SQLite/blob/main/SQLite/Imagenes/default.PNG)
 
 8.CHECK CONSTRAINT
 
@@ -44,20 +55,25 @@ RTA/:-Las restricciones de SQLite CHECK le permiten definir expresiones para pro
 
 -Si los valores no cumplen con los criterios definidos por la expresión, SQLite emitirá una violación de restricción y anulará la declaración. indica que los únicos datos que se pueden almacenar por medio de condiciones.
 
+![Image text](https://github.com/tcarolina/SQLite/blob/main/SQLite/Imagenes/check.PNG)
+
 9.ALTER TABLE
 
 RTA/:permite estas alteraciones de una tabla existente: se puede renombrar; se puede cambiar el nombre de una columna; se le puede agregar una columna; o se puede quitar una columna.
+
+![Image text](https://github.com/tcarolina/SQLite/blob/main/SQLite/Imagenes/alter.PNG)
 
 10.DELETE, DROP
 
 RTA/:-DELETEle permite eliminar una fila, varias filas y todas las filas de una tabla.
 -DROP TABLE se utiliza para eliminar una definición de tabla y todos los datos, índices, activadores, restricciones y especificaciones de permisos asociados para esa tabla.
 
+![Image text](https://github.com/tcarolina/SQLite/blob/main/SQLite/Imagenes/droptable.PNG)
+
 11.BACKUP, RESTORE
 
 RTA/:.backup proporciona el comando dot que le permite realizar una copia de seguridad de una base de datos de forma rápida y sencilla.
 ej'.backup Store Store_backup.db
-
 
 referencia: 
 - https://www.javatpoint.com/sqlite-date-and-time 
