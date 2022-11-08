@@ -18,6 +18,8 @@ RTA/:-La función SQLite date() se usa para calcular la fecha y devolverla en el
 RTA/:-La clave principal de SQLite es un campo simple o una combinación de campos que se utiliza para definir un registro de forma única. Una tabla solo puede tener una clave principal.
 -La clave principal generalmente se crea en el momento de crear la tabla. Definimos la clave principal mientras ejecutamos la instrucción CREATE TABLE.
 
+![Image text](https://github.com/tcarolina/SQLite/blob/main/SQLite/Imagenes/Captura1.PNG)
+
 5.NOT NULL CONSTRAINT
 RTA/:-nos dice que los registros en este campo o columna no pueden ser nulos, por lo que se deben guardar algun registro.
 
@@ -44,5 +46,5 @@ RTA/:.backup proporciona el comando dot que le permite realizar una copia de seg
 ej'.backup Store Store_backup.db
 
 
-referencia:https://www.javatpoint.com/sqlite-date-and-time
+referencia:https://www.javatpoint.com/sqlite-date-and-time , 
            https://www.tutorialspoint.com/sqlite/index.htm 
